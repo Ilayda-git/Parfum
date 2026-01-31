@@ -7,7 +7,7 @@
 
 Le prix d’un parfum ne dépend pas uniquement de ses caractéristiques olfactives ou de sa composition. Il est également influencé par des éléments immatériels tels que la notoriété de la marque, le marketing ou le positionnement commercial. Ces facteurs rendent souvent difficile la compréhension des écarts de prix entre des parfums pourtant comparables.
 
-Ce projet a pour objectif de proposer une **approche plus objective du marché du parfum**, en s’appuyant exclusivement sur les **caractéristiques intrinsèques** des produits. À partir de données collectées automatiquement sur le web (famille olfactive, ingrédients, concepts, origine, année, genre), un modèle de **Machine Learning** prédit la **catégorie de prix** d’un parfum.
+Ce projet a pour objectif de proposer une **approche plus objective du marché du parfum**, en s’appuyant exclusivement sur les **caractéristiques intrinsèques** des produits. À partir de données collectées automatiquement sur le [web](https://www.wikiparfum.com/fr/fragrances/)(famille olfactive, ingrédients, concepts, origine, année, genre), un modèle de **Machine Learning** prédit la **catégorie de prix** d’un parfum.
 
 Le modèle classe les parfums selon trois segments représentatifs du marché : **mass market, prestige et niche**. La variable *marque* est volontairement exclue de la modélisation afin d’éviter un biais lié au branding et de se concentrer sur la valeur du produit indépendamment de son image commerciale.
 
