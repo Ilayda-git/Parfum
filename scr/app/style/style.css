@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300..900;1,300..900&family=Rubik:ital,wght@0,400..900;1,400..900&display=swap');
+
+.stApp {
+    background-color: #faf0e6;
+    color: #333333;
+}
+
+html, body, p, div, label, .stMarkdown {
+    font-family: 'Noto Sans', sans-serif !important;
+}
+header, footer {
+    background-color: #faf0e6 !important;
+    color: #651e2c !important;
+}
+h1, h2, h3 {
+    font-family: 'Rubik', sans-serif !important;
+    color: #651e2c !important;
+}
+
+.stButton > button[kind="primary"] {
+    border: none !important;
+    border-radius: 15px !important;
+    padding: 10px 24px !important;
+    font-weight: bold !important;
+}
+
+.stTextInput input, .stSelectbox div[data-baseweb="select"] > div, .stNumberInput input, .stTextArea textarea {
+    background-color: #fff8f5 !important;
+    border: 1px solid #803d3d !important;
+    border-radius: 15px !important;
+}
+
+div[role="alert"] {
+    background-color: #fff8f5 !important;
+    border: 1px solid #fff8f5 !important;
+    border-radius: 10px !important;
+    padding: 15px !important;
+    color: #651e2c !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05) !important;
+}
+div[role="alert"] > div:first-child {
+    color: #c0392b !important;
+}
+
+
+div[role="slider"] {
+    background-color: #c0392b!important;
+    border: 2px solid #c0392b !important;
+    box-shadow: 0 2px 6px rgba(192, 57, 43, 0.4) !important;
+    height: 15px !important;
+    width: 15px !important;
+}
+div[data-testid="stSlider"] label, 
+div[data-testid="stSlider"] p {
+    color: #c0392b !important;
+    font-family: 'Rubik', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+}
+div[data-testid="stSlider"] [data-testid="stMarkdownContainer"] {
+    color: #333 !important;
+}
+div[data-testid="stTickBar"] > div > div > div > div {
+    background-color: #e6d2c4 !important;
+    color: #f38b96 !important;
+    height: 6px !important;
+    border-radius: 4px !important;
+}
+
+/* ------------------------------
+   Présentation (Tab 5)
+   ------------------------------ */
+
+.presentation-hero {
+    background: linear-gradient(135deg, #fff8f5 0%, #faf0e6 100%);
+    border: 1px solid #e6d2c4;
+    border-radius: 18px;
+    padding: 22px 24px;
+    margin: 8px 0 18px 0;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.presentation-hero-title {
+    font-family: 'Rubik', sans-serif;
+    color: #651e2c;
+    font-weight: 800;
+    font-size: 1.55rem;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.presentation-hero-subtitle {
+    margin-top: 10px;
+    color: #333333;
+    opacity: 0.92;
+    font-size: 1.0rem;
+}
+
+.presentation-badges {
+    margin-top: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.presentation-pill {
+    display: inline-block;
+    background: #fff8f5;
+    border: 1px solid #e6d2c4;
+    color: #651e2c;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-weight: 650;
+    font-size: 0.85rem;
+}
+
+.presentation-card {
+    background-color: #fff8f5;
+    border: 1px solid #e6d2c4;
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+}
+
+.presentation-card h3 {
+    margin: 0 0 10px 0;
+}
+
+.presentation-card p {
+    margin: 0;
+}
+
+.presentation-card ul {
+    margin: 10px 0 0 18px;
+}
+
+.presentation-muted {
+    color: #333333;
+    opacity: 0.9;
+}
+
+.presentation-steps {
+    margin-top: 12px;
+}
+
+.presentation-step {
+    background: #fff8f5;
+    border: 1px solid #e6d2c4;
+    border-left: 6px solid #c0392b;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+    height: 100%;
+}
+
+.presentation-step-title {
+    font-family: 'Rubik', sans-serif;
+    color: #651e2c;
+    font-weight: 800;
+    margin: 0 0 8px 0;
+}
+
+.presentation-step-text {
+    margin: 0;
+    color: #333333;
+    opacity: 0.92;
+}
