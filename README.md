@@ -121,11 +121,11 @@ L’application Streamlit permet d’interagir avec l’ensemble du pipeline du 
 
 Elle est structurée autour de plusieurs onglets, chacun répondant à un objectif précis.
 
-### ℹ️ Introduction
+### Introduction
 Cet onglet présente le **scénario du projet** et la logique générale de l’application.  
 Il explique pourquoi la prédiction se fait en **catégories de prix** (*mass market, prestige, niche*), ainsi que le choix méthodologique d’exclure la variable *marque* afin d’éviter un biais lié au branding.
 
-### 🔎 Explorer (catalogue)
+### Explorer (catalogue)
 Cet onglet permet d’explorer le catalogue de parfums collectés via le scraping.
 L’utilisateur peut filtrer les parfums selon différentes caractéristiques :
 - catégorie de prix,
@@ -136,26 +136,26 @@ L’utilisateur peut filtrer les parfums selon différentes caractéristiques :
 
 Les résultats peuvent être visualisés sous forme de **cartes** ou de **tableau**, facilitant la comparaison entre parfums.
 
-### 🔮 Prédire
+### Prédire
 Dans cet onglet, l’utilisateur peut renseigner les caractéristiques d’un parfum (famille, ingrédients, concepts, origine, etc.).
 Le modèle de Machine Learning prédit alors la **catégorie de prix** la plus probable, accompagnée des **probabilités associées** à chaque segment.
 
 Cette prédiction correspond à un **positionnement théorique**, indépendant de la marque.
 
-### 📌 Comparer
+### Comparer
 Cet onglet permet de comparer :
 - la **catégorie réelle** d’un parfum issu du catalogue,
 - la **catégorie prédite** par le modèle à partir de ses caractéristiques.
 
 L’objectif est d’identifier des écarts de positionnement (parfum potentiellement sur- ou sous-positionné) et de mieux comprendre la logique de segmentation du marché.
 
-### 🧾 Ingrédients & Concepts
+### Ingrédients & Concepts
 Cet onglet propose une analyse descriptive des ingrédients et concepts présents dans la base :
 - fréquence d’apparition,
 - répartition par nombre de parfums,
 - exploration des termes les plus représentatifs.
 
-### 📊 Stats
+### Stats
 Cet onglet regroupe des statistiques descriptives et des visualisations interactives :
 - répartition des catégories de prix,
 - distribution par genre, famille ou origine,
