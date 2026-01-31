@@ -176,7 +176,7 @@ with tab1:
 # TAB 2 : Prédire (ML)
 
 with tab2:
-    sub1, sub2 = st.tabs(["🔮 Prédire", "📌 Comparer"])
+    sub1, sub2 = st.tabs(["Prédire", "Comparer"])
     # Sous-onglet 1 : Prédire
     with sub1:
         st.subheader("Prédire une catégorie de prix")
