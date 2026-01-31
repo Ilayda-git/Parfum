@@ -66,8 +66,8 @@ parfum/
 │   │
 │   └── scraping/
 │       ├── module/                     # Fonctions 
-│       ├── Scraping_Data.py            # Scraping des données produits
-│       └── Scraping_URL.py             # Génération des URLs
+│       ├── Scraping_Data.py            # Scraping des données brutes pour chaque Fragrance
+│       └── Scraping_URL.py             # Scraping des URLs
 │
 ├── tests/
 │   └── test_*.py                       # Tests unitaires
@@ -75,3 +75,107 @@ parfum/
 ├── app.py                              # Lancement de l’application Streamlit
 ├── README.md
 └── pyproject.toml
+
+```
+---
+
+## 5. PRÉREQUIS
+
+Python3.11
+
+---
+
+
+## 6. INSTALLATION
+Via le clonage et Poetry
+
+```text
+(base) NomDeUtilisateur git clone <url-du-repository>
+cd parfum
+(base) NomDeUtilisateur python -m poetry install
+(base) NomDeUtilisateur python -m poetry env activate
+```
+- Lorsque l’environnement virtuel est activé, toutes les commandes Python s’exécutent dans un environnement isolé, garantissant la reproductibilité du projet.
+
+Alternative via pip
+
+```text
+(base) NomDeUtilisateur pip install -r requirements.txt
+```
+
+## 7. COMMENT EXÉCUTER LE PROJET ?
+Lancer l’application Streamlit
+
+```text 
+(base) yilmazilayda@MacBookAir Parfum %  streamlit run app.py
+```
+
+Lancer les tests unitaires
+```text
+(base) yilmazilayda@MacBookAir Parfum % pytest
+```
+
+## 8. UTILISATION DE L’APPLICATION
+
+L’application Streamlit permet d’interagir avec l’ensemble du pipeline du projet, depuis l’exploration des données jusqu’à la prédiction et la comparaison des catégories de prix.
+
+Elle est structurée autour de plusieurs onglets, chacun répondant à un objectif précis.
+
+### ℹ️ Introduction
+Cet onglet présente le **scénario du projet** et la logique générale de l’application.  
+Il explique pourquoi la prédiction se fait en **catégories de prix** (*mass market, prestige, niche*), ainsi que le choix méthodologique d’exclure la variable *marque* afin d’éviter un biais lié au branding.
+
+### 🔎 Explorer (catalogue)
+Cet onglet permet d’explorer le catalogue de parfums collectés via le scraping.
+L’utilisateur peut filtrer les parfums selon différentes caractéristiques :
+- catégorie de prix,
+- famille et sous-famille olfactive,
+- origine, genre, parfumeur,
+- ingrédients et concepts,
+- année de sortie.
+
+Les résultats peuvent être visualisés sous forme de **cartes** ou de **tableau**, facilitant la comparaison entre parfums.
+
+### 🔮 Prédire
+Dans cet onglet, l’utilisateur peut renseigner les caractéristiques d’un parfum (famille, ingrédients, concepts, origine, etc.).
+Le modèle de Machine Learning prédit alors la **catégorie de prix** la plus probable, accompagnée des **probabilités associées** à chaque segment.
+
+Cette prédiction correspond à un **positionnement théorique**, indépendant de la marque.
+
+### 📌 Comparer
+Cet onglet permet de comparer :
+- la **catégorie réelle** d’un parfum issu du catalogue,
+- la **catégorie prédite** par le modèle à partir de ses caractéristiques.
+
+L’objectif est d’identifier des écarts de positionnement (parfum potentiellement sur- ou sous-positionné) et de mieux comprendre la logique de segmentation du marché.
+
+### 🧾 Ingrédients & Concepts
+Cet onglet propose une analyse descriptive des ingrédients et concepts présents dans la base :
+- fréquence d’apparition,
+- répartition par nombre de parfums,
+- exploration des termes les plus représentatifs.
+
+### 📊 Stats
+Cet onglet regroupe des statistiques descriptives et des visualisations interactives :
+- répartition des catégories de prix,
+- distribution par genre, famille ou origine,
+- évolution temporelle des parfums,
+- cartes de provenance.
+
+---
+
+## 9. LIMITES ET AXES D’AMÉLIORATION
+
+- Absence de certaines variables déterminantes du prix (notoriété réelle, budget marketing, rareté des matières premières).
+- Performances perfectibles des modèles liées à la nature catégorielle de la cible.
+- Possibilité d’exploiter davantage les données textuelles via des techniques avancées de **NLP**.
+- Enrichissement du dataset avec de nouvelles sources ou plateformes.
+- Développement de modèles spécifiques par segment (*mass market / prestige / niche*).
+
+---
+
+## 10. AUTEURS
+
+- **Thomas Barat**
+- **Ilayda Yilmaz**  
+
