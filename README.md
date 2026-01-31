@@ -11,7 +11,7 @@ Ce projet a pour objectif de proposer une **approche plus objective du marché d
 
 Le modèle classe les parfums selon trois segments représentatifs du marché : **mass market, prestige et niche**. La variable *marque* est volontairement exclue de la modélisation afin d’éviter un biais lié au branding et de se concentrer sur la valeur du produit indépendamment de son image commerciale.
 
-L’application développée dans ce projet permet ainsi à l’utilisateur de comparer des parfums sur une base neutre, d’identifier des parfums potentiellement **sur ou sous-positionnés** en termes de prix, et de mieux comprendre les **logiques de segmentation** du marché du parfum. Elle peut également servir d’outil d’aide au positionnement pour un nouveau parfum, en estimant la catégorie de prix cohérente avec ses caractéristiques.
+L’application [Parfum](https://ilayda-git-parfum-app-5orfwr.streamlit.app) développée dans ce projet permet ainsi à l’utilisateur de comparer des parfums sur une base neutre, d’identifier des parfums potentiellement **sur ou sous-positionnés** en termes de prix, et de mieux comprendre les **logiques de segmentation** du marché du parfum. Elle peut également servir d’outil d’aide au positionnement pour un nouveau parfum, en estimant la catégorie de prix cohérente avec ses caractéristiques.
 
 Les résultats fournis par l’application sont des **estimations analytiques** et ne constituent pas des prix de vente réels. Ils doivent être interprétés comme un **outil d’éclairage économique et pédagogique** sur la formation des prix dans le secteur du parfum.
 
