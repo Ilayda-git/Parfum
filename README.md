@@ -7,7 +7,7 @@
 
 Le prix d’un parfum ne dépend pas uniquement de ses caractéristiques olfactives ou de sa composition. Il est également influencé par des éléments immatériels tels que la notoriété de la marque, le marketing ou le positionnement commercial. Ces facteurs rendent souvent difficile la compréhension des écarts de prix entre des parfums pourtant comparables.
 
-Ce projet a pour objectif de proposer une **approche plus objective du marché du parfum**, en s’appuyant exclusivement sur les **caractéristiques intrinsèques** des produits. À partir de données collectées automatiquement sur le [web](https://www.wikiparfum.com/fr/fragrances/)(famille olfactive, ingrédients, concepts, origine, année, genre), un modèle de **Machine Learning** prédit la **catégorie de prix** d’un parfum.
+Ce projet a pour objectif de proposer une **approche plus objective du marché du parfum**, en s’appuyant exclusivement sur les **caractéristiques intrinsèques** des produits. À partir de données collectées automatiquement sur le [web](https://www.wikiparfum.com/fr/fragrances/) (famille olfactive, ingrédients, concepts, origine, année, genre), un modèle de **Machine Learning** prédit la **catégorie de prix** d’un parfum.
 
 Le modèle classe les parfums selon trois segments représentatifs du marché : **mass market, prestige et niche**. La variable *marque* est volontairement exclue de la modélisation afin d’éviter un biais lié au branding et de se concentrer sur la valeur du produit indépendamment de son image commerciale.
 
@@ -19,11 +19,11 @@ Les résultats fournis par l’application sont des **estimations analytiques** 
 ---
 ## 2. OBJECTIFS DU PROJET
 
-- Collecter automatiquement des données sur les parfums à partir de sites spécialisés  
+- Collecter automatiquement des données sur les parfums à partir du site [Wikiparfum](https://www.wikiparfum.com/fr/fragrances/) 
 - Construire un dataset structuré et exploitable pour l’analyse  
 - Mettre en place un pipeline reproductible de traitement des données  
 - Entraîner des modèles de **Machine Learning** pour prédire la catégorie de prix des parfums  
-- Comparer la **catégorie réelle** d’un parfum à celle **prédite par le modèle**  
+- Predire Comparer la **catégorie réelle** d’un parfum à celle **prédite par le modèle**  
 - Proposer une application interactive pour explorer et interpréter les résultats  
 
 ---
@@ -33,7 +33,7 @@ Les résultats fournis par l’application sont des **estimations analytiques** 
 - Web scraping automatisé de données produits  
 - Nettoyage et transformation des données  
 - Modèles de classification pour le positionnement prix (*mass market, prestige, niche*)  
-- Comparaison réel vs prédiction  
+- Predire la catégorie d'un parfum en fonction de ces caractéristiques et comparaison réel vs prédiction  
 - Visualisations statistiques et exploratoires  
 - Application Streamlit interactive  
 - Tests unitaires pour certaines briques fonctionnelles  
