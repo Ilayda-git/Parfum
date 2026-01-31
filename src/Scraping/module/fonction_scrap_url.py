@@ -1,5 +1,5 @@
 """
-Fonctions de scrapping des URLs & de sérialisation des parfums depuis une page HTML.
+Fonctions de scraping des URLs & de sérialisation des parfums depuis une page HTML.
 """
 
 import re

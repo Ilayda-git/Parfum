@@ -1,5 +1,5 @@
 """
-        Tests unitaires / intégration légère pour Scrapping_Data.py
+        Tests unitaires / intégration légère pour Scraping_Data.py
         Objectif : Tester uniquement les fonctions d'extraction "pures" (regex) + fusion
 
         On fait 2 types de tests :

@@ -1,5 +1,5 @@
 """
-Module définissant les classes de données pour le scrapping des parfums.
+Module définissant les classes de données pour le scraping des parfums.
 """
 
 from typing import Optional

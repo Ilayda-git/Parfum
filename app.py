@@ -179,7 +179,7 @@ with tab2:
     sub1, sub2 = st.tabs(["🔮 Prédire", "📌 Comparer"])
     # Sous-onglet 1 : Prédire
     with sub1:
-        st.subheader("Prédire une catégorie de prix (ML)")
+        st.subheader("Prédire une catégorie de prix")
 
         model = load_model(MODEL_PATH)
 
@@ -397,13 +397,12 @@ with tab4:
     st.markdown("#### Que voulez-vous consulter ?")
     view = st.selectbox(
         "",
-        [
-            "Histogramme des années",
-            "Répartition des prix",
+        [   "Origine",
             "Genre",
-            "Origine",
             "Famille",
             "Sous-famille",
+            "Histogramme des années",
+            "Répartition des prix",
         ],
         key="stats_view",
     )
@@ -573,8 +572,6 @@ with tab4:
             st.info("Colonne Origine indisponible.")
         else:
             _plot_bar(origine_dist, "Top origines")
-
-            st.caption("Carte (pays colorés)")
             showed_choro = False
             if _PLOTLY_OK:
                 ch = origins_choropleth(df_stats, top_n=30)
@@ -586,7 +583,7 @@ with tab4:
                         hover_name="Origine",
                         hover_data={"Count": True, "iso_alpha": False},
                         projection="natural earth",
-                        template="plotly_dark",
+                        template="plotly_white",
                         color_discrete_sequence=(getattr(px.colors.qualitative, "Set3", []) + _PLOTLY_COLORS)
                         if hasattr(px, "colors")
                         else None,
@@ -715,7 +712,7 @@ with tab5:
                         """
 <div class="presentation-step">
     <div class="presentation-step-title">🔮 Comparer</div>
-    <p class="presentation-step-text">Confronter la catégorie réelle d’un parfum à celle prédite par le modèle.</p>
+    <p class="presentation-step-text">Confronter la catégorie prix réelle d’un parfum à celle prédite par le modèle.</p>
 </div>
                         """,
                         unsafe_allow_html=True,

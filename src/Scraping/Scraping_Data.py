@@ -1,5 +1,5 @@
 """
-Module principal pour le scrapping des données de parfums à partir des URLs.
+Module principal pour le scraping des données de parfums à partir des URLs.
 """
 
 import json

@@ -1,5 +1,5 @@
 """
-Module principal pour le scrapping des URLs des parfums à partir de la page catalogue.
+Module principal pour le scraping des URLs des parfums à partir de la page catalogue.
 """
 
 from src.Scraping.module.telechargement_catalogue import recupere_page_complete
