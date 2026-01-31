@@ -100,7 +100,7 @@ Via le clonage et Poetry
 Alternative via pip
 
 ```text
-(base) NomDeUtilisateur pip install -r requirements.txt
+(base) yilmazilayda@MacBookAir Parfum % pip install -r requirements.txt
 ```
 
 ## 7. COMMENT EXÉCUTER LE PROJET ?
