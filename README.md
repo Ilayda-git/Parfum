@@ -5,11 +5,16 @@
 
 ## 1. INTRODUCTION
 
-Ce projet vise à analyser le **marché du parfum** à partir de données produits collectées automatiquement sur des sites spécialisés (notamment *Wikiparfum*), puis à exploiter ces données à l’aide de techniques de **Machine Learning** afin de **prédire et comparer le positionnement prix** des parfums.
+Le prix d’un parfum ne dépend pas uniquement de ses caractéristiques olfactives ou de sa composition. Il est également influencé par des éléments immatériels tels que la notoriété de la marque, le marketing ou le positionnement commercial. Ces facteurs rendent souvent difficile la compréhension des écarts de prix entre des parfums pourtant comparables.
 
-Le marché du parfum est structuré autour de plusieurs segments (*mass market, prestige, niche*), dont les frontières sont parfois floues pour le consommateur. L’objectif du projet est de proposer une **lecture objective de ces segments**, fondée sur les **caractéristiques intrinsèques** des parfums (famille olfactive, ingrédients, concepts, origine, année, genre, etc.).
+Ce projet a pour objectif de proposer une **approche plus objective du marché du parfum**, en s’appuyant exclusivement sur les **caractéristiques intrinsèques** des produits. À partir de données collectées automatiquement sur le web (famille olfactive, ingrédients, concepts, origine, année, genre), un modèle de **Machine Learning** prédit la **catégorie de prix** d’un parfum.
 
-La variable *marque* est volontairement exclue des modèles afin d’éviter un biais lié au branding et de se concentrer sur la logique économique du produit lui-même.
+Le modèle classe les parfums selon trois segments représentatifs du marché : **mass market, prestige et niche**. La variable *marque* est volontairement exclue de la modélisation afin d’éviter un biais lié au branding et de se concentrer sur la valeur du produit indépendamment de son image commerciale.
+
+L’application développée dans ce projet permet ainsi à l’utilisateur de comparer des parfums sur une base neutre, d’identifier des parfums potentiellement **sur- ou sous-positionnés** en termes de prix, et de mieux comprendre les **logiques de segmentation** du marché du parfum. Elle peut également servir d’outil d’aide au positionnement pour un nouveau parfum, en estimant la catégorie de prix cohérente avec ses caractéristiques.
+
+Les résultats fournis par l’application sont des **estimations analytiques** et ne constituent pas des prix de vente réels. Ils doivent être interprétés comme un **outil d’éclairage économique et pédagogique** sur la formation des prix dans le secteur du parfum.
+
 
 ---
 
