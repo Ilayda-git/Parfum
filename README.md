@@ -147,7 +147,7 @@ Cet onglet permet de comparer :
 - la **catégorie réelle** d’un parfum issu du catalogue,
 - la **catégorie prédite** par le modèle à partir de ses caractéristiques.
 
-L’objectif est d’identifier des écarts de positionnement (parfum potentiellement sur- ou sous-positionné) et de mieux comprendre la logique de segmentation du marché.
+L’objectif est d’identifier des écarts de positionnement (parfum potentiellement sur ou sous-positionné) et de mieux comprendre la logique de segmentation du marché.
 
 ### Ingrédients & Concepts
 Cet onglet propose une analyse descriptive des ingrédients et concepts présents dans la base :
