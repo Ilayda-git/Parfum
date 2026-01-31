@@ -90,10 +90,10 @@ Python3.11
 Via le clonage et Poetry
 
 ```text
-(base) NomDeUtilisateur git clone <url-du-repository>
-cd parfum
-(base) NomDeUtilisateur python -m poetry install
-(base) NomDeUtilisateur python -m poetry env activate
+(base) yilmazilayda@MacBookAir git clone <url-du-repository>
+(base) yilmazilayda@MacBookAir cd parfum
+(base) yilmazilayda@MacBookAir Parfum % python -m poetry install
+(base) yilmazilayda@MacBookAir Parfum % python -m poetry env activate
 ```
 - Lorsque l’environnement virtuel est activé, toutes les commandes Python s’exécutent dans un environnement isolé, garantissant la reproductibilité du projet.
 
@@ -104,13 +104,24 @@ Alternative via pip
 ```
 
 ## 7. COMMENT EXÉCUTER LE PROJET ?
-Lancer l’application Streamlit
 
+Scraper les URLs et les données brutes :
+```text 
+(base) yilmazilayda@MacBookAir Parfum % uv run -m src.Scraping.Scraping_URL
+(base) yilmazilayda@MacBookAir Parfum % uv run -m src.Scraping.Scraping_Data
+```
+
+Nettoyage automatique de la base de données parfums pour le Machine Learning :
+```text 
+(base) yilmazilayda@MacBookAir Parfum % uv run -m src.Machine_learning.Nettoyage_base_ML
+```
+
+Lancer l’application Streamlit : 
 ```text 
 (base) yilmazilayda@MacBookAir Parfum %  streamlit run app.py
 ```
 
-Lancer les tests unitaires
+Lancer les tests unitaires : 
 ```text
 (base) yilmazilayda@MacBookAir Parfum % pytest
 ```
