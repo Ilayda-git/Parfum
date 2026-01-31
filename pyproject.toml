@@ -1,7 +1,7 @@
 [project]
 name = "parfum"
 version = "0.1.0"
-description = "Projet Web-Scraping et Machine Learning"
+description = "Développement d’un pipeline de web scraping et de machine learning permettant d’analyser le marché du parfum et de prédire et comparer le positionnement prix des parfums à partir de données produits collectées sur le site wikiparfum"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
