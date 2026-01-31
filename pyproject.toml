@@ -1,11 +1,12 @@
 [project]
 name = "parfum"
 version = "0.1.0"
-description = "Add your description here"
+description = "Projet Web-Scraping et Machine Learning"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "joblib>=1.5.3",
+    "numpy>=2.4.1",
     "pandas>=3.0.0",
     "playwright>=1.58.0",
     "polars>=1.37.1",

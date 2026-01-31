@@ -11,15 +11,13 @@ try:
 
     # Palette alignée sur scr/app/style/style.css
     _PLOTLY_COLORS = [
-        "#c0392b",  # accent (rouge)
-        "#803d3d",  # bordeaux
-        "#f38b96",  # rose
-        "#651e2c",  # titres
+        "#c0392b",  
+        "#803d3d", 
+        "#f38b96",  
+        "#651e2c",  
         "#b56576",
-        "#e6d2c4",  # beige
+        "#e6d2c4", 
     ]
-
-    # Template Plotly (fond clair + textes bordeaux) pour coller au style global
     _PLOTLY_TEMPLATE = {
         "layout": {
             "paper_bgcolor": "#faf0e6",
@@ -47,18 +45,18 @@ try:
 
     _PLOTLY_OK = True
 except Exception:
-    px = None  # type: ignore
-    _PLOTLY_COLORS = []  # type: ignore
-    _PLOTLY_TEMPLATE = None  # type: ignore
+    px = None 
+    _PLOTLY_COLORS = [] 
+    _PLOTLY_TEMPLATE = None 
     _PLOTLY_OK = False
 
-from scr.app.module.fonction_filtre import filter_df, options, opts_no_all
-from scr.app.module.fonction_prettycard import pretty_cards
-from scr.app.module.fonction_filtre_2 import filter_by_terms
-from scr.app.module.fonction_tableau import show_terms_table
-from scr.app.module.fonction_cache import load_data, load_model, build_term_stats
-from scr.app.module.fonction_css import local_css
-from scr.app.module.fonction_stats import (
+from src.app.module.fonction_filtre import filter_df, options, opts_no_all
+from src.app.module.fonction_prettycard import pretty_cards
+from src.app.module.fonction_filtre_2 import filter_by_terms
+from src.app.module.fonction_tableau import show_terms_table
+from src.app.module.fonction_cache import load_data, load_model, build_term_stats
+from src.app.module.fonction_css import local_css
+from src.app.module.fonction_stats import (
     distribution,
     origins_choropleth,
     origins_geo,
@@ -73,7 +71,7 @@ local_css("style.css")
 
 ROOT = Path(__file__).resolve().parent
 DATA_PATH = ROOT / "data" / "parfums_data_base_machineLearning.csv"
-MODEL_PATH = ROOT / "scr" / "Machine_learning" / "best_model.pkl"
+MODEL_PATH = ROOT / "src" / "Machine_learning" / "best_model.pkl"
 
 df = load_data(DATA_PATH)
 
@@ -97,7 +95,6 @@ with tab1:
     ing_terms_all = build_term_stats(df, "Ingredients_txt")["Terme"].tolist() if not df.empty else []
     con_terms_all = build_term_stats(df, "Concepts_txt")["Terme"].tolist() if not df.empty else []
 
-    # Filtres
     with col2:
         st.subheader("Filtres")
         with st.container(border=True):
@@ -180,10 +177,7 @@ with tab1:
 
 with tab2:
     sub1, sub2 = st.tabs(["🔮 Prédire", "📌 Comparer"])
-
-    # -------------------------
     # Sous-onglet 1 : Prédire
-    # -------------------------
     with sub1:
         st.subheader("Prédire une catégorie de prix (ML)")
 
@@ -257,9 +251,7 @@ with tab2:
             if isinstance(proba_df, pd.DataFrame) and not proba_df.empty:
                 st.dataframe(proba_df, use_container_width=True)
 
-    # ---------------------------------------
     # Sous-onglet 2 : Comparer (réel vs ML)
-    # ---------------------------------------
     with sub2:
         st.subheader("Comparer la catégorie de prix : réelle vs prédite")
 
@@ -321,7 +313,6 @@ with tab2:
 
 
 # TAB 3 : Ingrédients & Concepts
-
 with tab3:
     st.subheader("Lister les ingrédients et concepts")
 
@@ -389,7 +380,6 @@ with tab3:
 
 
 # TAB 4 : Stats
-
 with tab4:
     st.subheader("Statistiques du catalogue")
 

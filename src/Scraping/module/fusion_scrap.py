@@ -5,7 +5,7 @@ Module pour fusionner les données extraites et les sérialiser en JSON.
 import json
 from pathlib import Path
 
-from scr.Scrapping.module.classe import Data_base, Donnée_Parfum
+from src.Scraping.module.classe import Data_base, Donnée_Parfum
 
 
 def fusionne_donnees(dict_html, dict_xhr) -> Donnée_Parfum:

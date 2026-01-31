@@ -2,10 +2,10 @@
 Module principal pour le scrapping des URLs des parfums à partir de la page catalogue.
 """
 
-from scr.Scrapping.module.telechargement_catalogue import recupere_page_complete
-from scr.Scrapping.module.fusion_scrap import serialise
-from scr.Scrapping.module.fonction_scrap_url import extraction_urls
-from scr.Scrapping.module.classe import Catalogue
+from src.Scraping.module.telechargement_catalogue import recupere_page_complete
+from src.Scraping.module.fusion_scrap import serialise
+from src.Scraping.module.fonction_scrap_url import extraction_urls
+from src.Scraping.module.classe import Catalogue
 
 
 def main():

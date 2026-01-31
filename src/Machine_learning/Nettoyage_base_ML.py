@@ -4,8 +4,8 @@ Module pour le nettoyage de la base de données de parfums en vue de l'apprentis
 
 from pathlib import Path
 import polars as pl
-from scr.Machine_learning.module.load_data import load_data
-from scr.Machine_learning.module.nettoyage import nettoyage
+from src.Machine_learning.module.load_data import load_data
+from src.Machine_learning.module.nettoyage import nettoyage
 
 root = Path(__file__).resolve().parents[2]
 in_path = root / "Data" / "parfums_data_base.json"

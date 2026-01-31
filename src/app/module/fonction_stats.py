@@ -1,4 +1,5 @@
-"""Helpers pour l'onglet Stats (Streamlit).
+"""
+Helpers pour l'onglet Stats (Streamlit).
 
 Objectif: fournir des agrégations robustes (comptes, parts, séries temporelles)
 à partir du DataFrame principal, et de quoi afficher les origines en cartes + carte.

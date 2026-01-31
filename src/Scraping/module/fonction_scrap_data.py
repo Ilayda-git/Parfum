@@ -7,7 +7,7 @@ import re
 import html
 import json
 from playwright.sync_api import sync_playwright
-from scr.Scrapping.module.telechargment_fragrance import telecharge_page
+from src.Scraping.module.telechargment_fragrance import telecharge_page
 
 
 

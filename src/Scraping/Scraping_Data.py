@@ -4,10 +4,10 @@ Module principal pour le scrapping des données de parfums à partir des URLs.
 
 import json
 from pathlib import Path
-from scr.Scrapping.module.fonction_scrap_data import Scrappe_html, Scrappe_xhr
-from scr.Scrapping.module.fusion_scrap import fusionne_donnees, serialise
+from src.Scraping.module.fonction_scrap_data import Scrappe_html, Scrappe_xhr
+from src.Scraping.module.fusion_scrap import fusionne_donnees, serialise
 
-from scr.Scrapping.module.classe import Data_base
+from src.Scraping.module.classe import Data_base
 
 
 current_script = Path(__file__).resolve()

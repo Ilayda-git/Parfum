@@ -1,3 +1,8 @@
+"""
+Ce fichier exécute l’entraînement, l’optimisation et la sauvegarde du modèle GradientBoostingClassifier, sélectionné comme meilleur modèle au regard des performances obtenues (F1 macro).
+"""
+
+
 import pandas as pd
 import numpy as np
 import joblib
@@ -10,7 +15,7 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.model_selection import  GridSearchCV, train_test_split
 from sklearn.metrics import f1_score
-from scr.Scrapping.Scrapping_Data import ROOT
+from src.Scraping.Scraping_Data import ROOT
 
 
 def main():

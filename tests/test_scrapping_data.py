@@ -9,8 +9,8 @@
 
 import requests
 from pathlib import Path
-from scr.Scrapping.module import fonction_scrap_data
-from scr.Scrapping.module import fusion_scrap
+from src.Scraping.module import fonction_scrap_data
+from src.Scraping.module import fusion_scrap
 
 URL_TEST = "https://www.wikiparfum.com/fr/fragrances/ck-one-essence-viva-love"
 

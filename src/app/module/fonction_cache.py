@@ -1,5 +1,6 @@
 """
-Fonctions avec cache pour le chargement des données et du modèle."""
+Fonctions avec cache pour le chargement des données et du modèle.
+"""
 
 import streamlit as st
 import pandas as pd
