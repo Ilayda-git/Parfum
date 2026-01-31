@@ -164,16 +164,6 @@ Cet onglet regroupe des statistiques descriptives et des visualisations interact
 
 ---
 
-## 9. LIMITES ET AXES D’AMÉLIORATION
-
-- Absence de certaines variables déterminantes du prix (notoriété réelle, budget marketing, rareté des matières premières).
-- Performances perfectibles des modèles liées à la nature catégorielle de la cible.
-- Possibilité d’exploiter davantage les données textuelles via des techniques avancées de **NLP**.
-- Enrichissement du dataset avec de nouvelles sources ou plateformes.
-- Développement de modèles spécifiques par segment (*mass market / prestige / niche*).
-
----
-
 ## 10. AUTEURS
 
 - **Thomas Barat**
