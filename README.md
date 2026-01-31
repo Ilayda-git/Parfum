@@ -42,6 +42,7 @@ Ce projet illustre les enjeux économiques liés à la **segmentation prix** dan
 
 Le projet est organisé de manière modulaire afin de séparer clairement les différentes étapes du pipeline :
 
+```text
 parfum/
 │
 ├── data/
@@ -72,4 +73,4 @@ parfum/
 ├── app.py
 ├── README.md
 └── pyproject.toml
-
+```
