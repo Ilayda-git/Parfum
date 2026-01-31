@@ -128,7 +128,7 @@ Lancer les tests unitaires :
 
 ## 8. UTILISATION DE L’APPLICATION
 
-L’application Streamlit permet d’interagir avec l’ensemble du pipeline du projet, depuis l’exploration des données jusqu’à la prédiction et la comparaison des catégories de prix.
+L’application Streamlit permet d’interagir avec l’ensemble du pipeline du projet, depuis l’exploration des données jusqu’à la prédiction et la comparaison des catégories de prix. Lien de l'application cliquer [ici](https://ilayda-git-parfum-app-5orfwr.streamlit.app).
 
 Elle est structurée autour de plusieurs onglets, chacun répondant à un objectif précis.
 
